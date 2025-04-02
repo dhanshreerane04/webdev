@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    
+    <!-- FontAwesome 6 (For Proper Eye Animation) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="signin.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="login-box">
+            <h2 style="font-family: Arial, sans-serif;">Sign Up</h2>
+            <form class="signup-form" novalidate action="signup.php" method="POST">
+
+                <label for="name">Name:</label>
+                <div class="input-container">
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <br>
+
+                <label for="username">Username:</label>
+                <div class="input-container">
+                    <input type="text" id="username" name="username" placeholder="Enter your Username">
+                </div>
+                <br>                
+
+                <label for="email">Email ID:</label>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <br>
+
+                <label for="password">Password:</label>
+                <div class="input-container password-container">
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <i class="fa-solid fa-eye-slash toggle-password"></i>
+                </div>
+                <br>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <div class="input-container password-container">
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                    <i class="fa-solid fa-eye-slash toggle-password"></i>
+                </div>
+                <br>
+
+                <input type="submit" value="Sign Up"><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
